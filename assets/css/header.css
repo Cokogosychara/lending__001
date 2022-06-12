@@ -1,0 +1,55 @@
+.navigation{
+    background-color: var(--bg-color) ;
+}
+.row{
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.logo{
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    /* transform: translateY(-0.75rem); свойство выравнивает когда плохой шрифт текста и нужно немного переместить в верх */
+    color: var(--accent-color);
+    font-size: 3rem;
+    font-family: cursive;
+}
+.nav-list{
+    text-align: center;     /* ткст по центру */
+    white-space: nowrap;    /* блоки всегда вряд */
+    overflow-x: scroll;    /* задает скрол этому элементу */
+}
+.nav-list::-webkit-scrollbar{    /* убераем видимую часть скрола а сам скрол остаеться */
+    display: none;
+}
+.nav-list-item{
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+.nav-list-item-link{
+    display: inline-block;
+    padding: 1rem; 
+     
+}
+.nav-list-item-link:hover,/* фокус использываеться для мобильной персии */
+.nav-list-item-link:focus{
+color: var(--accent-color);
+}
+
+.active{
+    color: var(--accent-color);
+}
+@media screen and (min-width: 576px){
+    .nav-list{
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 992px){
+    .logo{
+        text-align: left;
+    }
+    .nav-list{
+        text-align: right;
+        
+    }
+}

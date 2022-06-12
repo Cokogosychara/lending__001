@@ -1,0 +1,59 @@
+:root{
+    --accent-color:#34547A;
+    --bg-color:#eeeff1;
+    --light-color:#FFFFFF;
+    --dark-color:#000000;
+    --text-color:#727272;
+    --row-visibile-count:2;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: roboto , sans-serif;
+}
+.aling-center{
+    align-items: center;
+}
+.bg-full{
+    background-color: var(--bg-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.content{
+    margin: 3rem 0;
+    color: var(--text-color);
+    line-height: 1.6rem;
+}
+.btn{
+    max-width: 250px;
+    padding: 1.7rem 3rem;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    letter-spacing: 0.1rem;
+}
+.btn:focus{
+    box-shadow: 1px 1px 2px #555;
+}
+.overflow{
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+@media screen and (min-width:768px){
+       :root{
+           font-size: 16px;
+       }
+       .row-overflow{    /* делаем текст в несколько строчек  */
+        display: -webkit-box ;    /* установил дисплей вебкет что бы на телефонах появлялось 3 точки и была крос браузерность */
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--row-visibile-count);
+        max-height: calc(1.6rem*var(--row-visibile-count));/* высоту строки умножаем на 2 если 3 строчки то на 3  */
+        overflow: hidden;
+    }
+ } 
+ @media screen and (min-width:992px){
+    .row-overflow{    /* на экране компьютера или планшета 3 точки пропадают  */
+     display: block;
+     overflow: visible;
+     
+ }
+} 
