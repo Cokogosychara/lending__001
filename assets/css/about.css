@@ -1,0 +1,21 @@
+.about{
+    background-color: var(--light-color);
+}
+.about-info{
+    padding: 0 1rem;
+    margin: auto;
+    text-align: center;
+}
+.about-heading{
+    font-size: 2rem;
+    
+}
+.about-content{
+    margin-top: 2rem;
+}
+@media screen and (min-width:768px){
+    .about-info{
+        max-width: 50%;
+        max-height: 20%;
+    }
+}

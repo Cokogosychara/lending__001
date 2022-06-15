@@ -1,0 +1,38 @@
+.project{
+    background-color: var(--accent-color);
+}
+.project-wrap{
+   display: flex;
+   padding-top: 2rem;
+   
+}
+.bg-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    background: url(./../images/bg-fond.png);
+    background-size: cover;
+
+}
+.project-info{
+    margin-left: 1rem;
+}
+.project-title{
+    padding-top: 0.3rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.project-subtitle{
+    padding-top: 0.5rem;
+    color: var(--light-color);
+}
+@media screen   and  (max-width:576px){
+    
+    .project-wrap{
+        margin:0 30%;
+    }
+}
+@media screen   and  (min-width:1200px){
+    .project-wrap{
+        padding-top: 0;
+     }
+}
